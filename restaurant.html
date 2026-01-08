@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ресторан</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="header">
+      <a href="index.html" class="logo">
+        <img src="img/icon/logo.svg" alt="Logo">
+      </a>
+
+      <label class="address">
+        <input type="text" class="input input-address" placeholder="Адреса доставки">
+      </label>
+
+      <div class="buttons">
+        <button class="button button-primary button-auth">
+          <span class="button-text">Війти</span>
+        </button>
+
+        <button class="button" id="cart-button">
+          <span class="button-cart-svg"></span>
+          <span class="button-text">Кошик</span>
+        </button>
+      </div>
+    </header>
+  </div>
+
+  <main class="main">
+    <div class="container">
+
+      <section class="menu">
+        <div class="section-heading">
+          <h2 class="section-title restaurant-title">Меню ресторану</h2>
+        </div>
+
+        <div class="cards cards-menu"></div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <div class="modal-auth">
+    <div class="modal-dialog modal-dialog-auth">
+      <button class="close-auth">&times;</button>
+
+      <form id="logInForm">
+        <fieldset class="modal-body">
+          <legend class="modal-title">Авторизація</legend>
+
+          <label class="label-auth">
+            <span>Логін</span>
+            <input id="login" type="text">
+          </label>
+
+          <label class="label-auth">
+            <span>Пароль</span>
+            <input id="password" type="password">
+          </label>
+        </fieldset>
+
+        <div class="modal-footer">
+          <button class="button button-primary button-login" type="submit">
+            Війти
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
